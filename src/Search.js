@@ -6,7 +6,7 @@ class Search extends Component {
     render() {
         return (
             <Row>
-                <Input s={6} type="search" placeholder="Search" />
+                <Input s={12} type="search" placeholder="Search" />
             </Row>
         )
     }

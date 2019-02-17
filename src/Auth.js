@@ -17,9 +17,13 @@ class Auth extends Component {
 
   removeOverlays = () => {
     const sidenavOverlay = document.getElementById('sidenav-overlay');
-    sidenavOverlay.parentNode.removeChild(sidenavOverlay);
+    if (sidenavOverlay && sidenavOverlay.parentNode) {
+      sidenavOverlay.parentNode.removeChild(sidenavOverlay);
+    }
     const modalOverlay = document.getElementsByClassName('modal-overlay');
-    modalOverlay[0].parentNode.removeChild(modalOverlay[0]);
+    if (modalOverlay && modalOverlay[0] && modalOverlay[0].parentNode) {
+      modalOverlay[0].parentNode.removeChild(modalOverlay[0]);
+    }
   };
 
   render() {
@@ -61,7 +65,7 @@ class Auth extends Component {
         <div className="about">
           <div className="center">
             <img src="https://lorempixel.com/output/animals-q-c-800-410-9.jpg" className="photo" alt="Dog"></img>
-            <h1>PetConnect is a forum for users to talk with each other about their pets</h1>
+            <h3>PetConnect is a forum for users to talk with each other about their pets</h3>
           </div>
         </div>
       </Row>
