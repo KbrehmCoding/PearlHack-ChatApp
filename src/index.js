@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Chat from './Chat';
+import Auth from './Auth';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Chat />, document.getElementById('root'));
+ReactDOM.render(<Auth />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
