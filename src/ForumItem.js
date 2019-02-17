@@ -5,7 +5,9 @@ import './ForumItem.css';
 class ForumItem extends Component {
   render() {
     return (
-        <Row>
+        <Row onClick={() => {
+            this.props.onClick(this.props.id);
+        }}>
           {this.props.user} {this.props.name}
         </Row>
     );

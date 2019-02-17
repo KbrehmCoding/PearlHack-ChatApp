@@ -7,7 +7,7 @@ class Chat extends Component {
   render() {
     return (
       <div>
-        <MessageHistory messages={messages} />
+        <MessageHistory messages={this.props.forum.messages} />
         <MessageInput />
       </div>
     );
