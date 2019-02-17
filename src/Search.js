@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import './Search.css';
-import { Input } from 'react-materialize';
+import { Input, Row } from 'react-materialize';
 
 class Search extends Component {
     render() {
         return (
-            <div>
-                <row>
-                    <Input s={6} type="search" placeholder="Search" />
-                </row>
-            </div>
+            <Row>
+                <Input s={6} type="search" placeholder="Search" />
+            </Row>
         )
     }
 }

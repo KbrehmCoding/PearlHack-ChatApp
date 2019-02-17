@@ -6,7 +6,7 @@ class ForumItem extends Component {
   render() {
     return (
         <Row>
-          {this.props.user} {this.props.message}
+          {this.props.user} {this.props.name}
         </Row>
     );
   }
